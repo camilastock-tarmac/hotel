@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TBH Hotel - Invoice</title>
+  <style>
+      body {
+          font-family: sans-serif;
+      }
+
+      h1 {
+          color: #333;
+      }
+
+      h2, h3 {
+          color: #415189;
+      }
+
+      .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding: 10px;
+          border-bottom: 2px solid #ccc;
+      }
+
+      .logo, .maininfo {
+          flex: 1;
+      }
+
+      .maininfo {
+          text-align: right;
+      }
+  </style>
+</head>
+<body>
+<div class="header">
+  <div class="logo">
+    <h1>TBH Hotel - Invoice</h1>
+  </div>
+  <div class="maininfo">
+    <h3>Invoice Number: {{ id }}</h3>
+    <h3>Date: {{ date }}</h3>
+    <h3>Guest Name: {{ name }}</h3>
+    <h3>Guest Surname: {{ surname }}</h3>
+  </div>
+</div>
+{{ items|safe }}
+<p><strong>Total:</strong> {{ total }}</p>
+</body>
+</html>
