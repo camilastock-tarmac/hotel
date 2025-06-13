@@ -2,3 +2,7 @@ Django>=5.0,<5.2
 djangorestframework>=3.15,<3.16
 weasyprint>=60.0
 tabulate
+gunicorn==23.0.0
+psycopg2-binary==2.9.10
+asgiref==3.8.1
+sqlparse==0.5.2
